@@ -2,6 +2,11 @@
   margin: 0;
   font-weight: normal;
 }
+body {
+  background-image: url(./assets/windows-11-wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .clickable {
   display: flex;
   align-self: stretch;
@@ -92,12 +97,13 @@ h4 {
 }
 #search-input {
   width: 100%;
-  padding: 6px 0;
+  padding: 7px 0;
   padding-right: 30px;
   outline: 0;
   border: 0;
   background-color: transparent;
   font-family: "Segoe UI", sans-serif;
+  font-size: 0.84rem;
 }
 #taskbar-icons {
   margin-left: 4px;
