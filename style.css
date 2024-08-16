@@ -90,15 +90,25 @@ h4 {
 #windows-and-search {
   gap: 3px;
 }
+#search-input {
+  width: 100%;
+  padding: 6px 0;
+  padding-right: 30px;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  font-family: "Segoe UI", sans-serif;
+}
 #taskbar-icons {
   margin-left: 4px;
 }
 #search-box {
+  overflow: hidden;
   background-color: white;
   border-radius: 30px;
   border: 1px solid #c9d2e6;
-  padding: 6px 0;
-  padding-right: 150px;
+  /* padding: 6px 0; */
+  /* padding-right: 150px; */
   padding-left: 12px;
   display: flex;
   align-items: center;
