@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-button {
+.taskbar-wrapper * button, .taskbar-wrapper * button.windows-logo {
   background-color: transparent;
   outline: 0;
   border: none;
@@ -19,29 +19,33 @@ button {
   transition: border 0.1s, background-color 0.1s;
   padding: 5px;
 }
-button:hover {
+.taskbar-wrapper * button:hover, .taskbar-wrapper * button:hover.windows-logo {
   background-color: rgba(255, 255, 255, 0.6);
   border-color: #dde7f2;
 }
-button:active {
+.taskbar-wrapper * button:active, .taskbar-wrapper * button:active.windows-logo {
   background-color: rgba(255, 255, 255, 0.4);
 }
 .bouncy-click > img {
-  width: 100%;
-  transition: padding 0.1s;
+  padding: 3px;
+  transition: padding 0.1s, transform 0.1s;
 }
 .bouncy-click:active > img {
   padding: 3px;
+  transform: scale(0.8);
 }
 .windows-logo {
   max-width: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+}
+.windows-logo img {
+  max-width: 25px;
 }
 .taskbar-icon {
   max-width: 45px;
+  max-height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,8 +72,9 @@ h4 {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
 }
-.wrapper {
+.taskbar-wrapper {
   width: 100vw;
   height: fit-content;
   /* background-color: #e5effa; */
@@ -81,7 +86,7 @@ h4 {
   margin-top: auto;
   padding: 3px 0;
 }
-.wrapper img {
+.taskbar-wrapper img {
   pointer-events: none;
   user-select: none;
 }
@@ -172,4 +177,17 @@ h4 {
 }
 .time-text {
   text-align: right;
+}
+.desktop-icon-wrapper {
+  display: grid;
+  grid-template-rows: repeat(10fr);
+  grid-template-columns: repeat(10fr);
+}
+.desktop-icon-wrapper button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.desktop-icon-wrapper button img {
+  max-width: 45px;
 }
