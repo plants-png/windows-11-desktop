@@ -103,13 +103,12 @@ h4 {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding-left: 10px;
-  padding-right: 60px;
 }
 .weather-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-right: 65px;
   /* gap: 2px; */
 }
 .centre {
