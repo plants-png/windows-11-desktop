@@ -3,6 +3,7 @@
   font-weight: normal;
   font-size: 12.8px;
 }
+/* 
 body {
   background-image: url(./assets/windows-11-wallpaper.jpg);
   background-size: cover;
@@ -30,7 +31,7 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
 }
 .bouncy-click > img {
-  padding: 3px; /* for gaps in taskbar */
+  padding: 3px; for gaps in taskbar
   transition: padding 0.1s, transform 0.1s;
 }
 .bouncy-click:active > img {
@@ -80,7 +81,7 @@ h4 {
 .taskbar-wrapper {
   width: 100vw;
   height: fit-content;
-  /* background-color: #e5effa; */
+  background-color: #e5effa; 
   background: linear-gradient(90deg, #e5effa, #d7e0f7, #e5effa);
   border-top: 1.5px solid rgba(0, 0, 0, 0.1);
   display: flex;
@@ -109,7 +110,6 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   padding-right: 65px;
-  /* gap: 2px; */
 }
 .centre {
   display: flex;
@@ -144,8 +144,6 @@ h4 {
   background-color: white;
   border-radius: 30px;
   border: 1px solid #c9d2e6;
-  /* padding: 6px 0; */
-  /* padding-right: 150px; */
   padding-left: 12px;
   display: flex;
   align-items: center;
@@ -153,8 +151,6 @@ h4 {
 }
 #search-box:hover {
   background-color: rgba(245, 245, 245, 0.7);
-  /* opacity: 0.85; */
-  /* filter: brightness(0.97); */
 }
 #search-box h3 {
   color: rgba(0, 0, 0, 0.6);
@@ -165,7 +161,6 @@ h4 {
   flex-direction: row;
   align-items: center;
   margin-right: 10px;
-  /* gap: 5px; */
 }
 #taskbar-language {
   text-transform: uppercase;
@@ -213,4 +208,14 @@ h4 {
   color: white;
   text-shadow: 1px 1px 1px black;
   user-select: none;
+}
+*/
+
+/* Metadata configuration */
+
+#overall-div * {
+  user-select: none;
+}
+#overall-div img {
+  pointer-events: none;
 }
