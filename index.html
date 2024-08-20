@@ -9,44 +9,43 @@
   <body>
     <main id="overall-div">
       <footer>
-        <div class="left">
-          <button class="weather clickable">
+        <div id="footer-left">
+          <button id="weather-button">
             <img
               src="./assets/weather-sunny.png"
               alt="The Sunny icon in the Windows 11 taskbar weather"
               width="22"
             />
-            <div class="weather-text">
+            <div id="weather-button-text">
               <h3>18&deg;C</h3>
               <h4>Sunny</h4>
             </div>
           </button>
         </div>
-        <div class="centre">
-          <div id="windows-and-search">
-            <button class="windows-logo bouncy-click">
-              <img
-                src="./assets/Windows_11_Start_Button.svg"
-                alt="The Windows 11 windows taskbar icon"
-              />
-            </button>
-            <div id="search-box">
-              <img
-                src="./assets/Search-Icon.png"
-                alt="The Windows 11 search icon in the search box"
-                width="15"
-              />
-              <input type="text" placeholder="Search" id="search-input" />
-            </div>
+        <div id="footer-centre">
+          <button id="windows-button">
+            <img
+              src="./assets/Windows_11_Start_Button.svg"
+              alt="The Windows 11 windows taskbar icon"
+              width="22"
+            />
+          </button>
+          <div id="search-box">
+            <img
+              src="./assets/Search-Icon.png"
+              alt="The Windows 11 search icon in the search box"
+              width="15"
+            />
+            <input type="text" placeholder="Search" id="search-input" />
           </div>
           <div id="taskbar-icons">
-            <button class="taskbar-icon bouncy-click">
+            <button class="taskbar-button bouncy-click">
               <img
                 src="./assets/Windows_11_Task_View_Icon.png"
                 alt="The Windows 11 Task View icon"
               />
             </button>
-            <button class="taskbar-icon bouncy-click">
+            <button class="taskbar-button bouncy-click">
               <img
                 src="./assets/File_Explorer_Icon.png"
                 alt="The Windows 11 File Explorer icon"
@@ -54,7 +53,7 @@
             </button>
           </div>
         </div>
-        <div class="right">
+        <div id="footer-right">
           <button>
             <img
               src="./assets/taskbar-tray-icon.png"
