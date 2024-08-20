@@ -213,9 +213,30 @@ h4 {
 
 /* Metadata configuration */
 
+#overall-div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 #overall-div * {
   user-select: none;
 }
 #overall-div img {
   pointer-events: none;
+}
+footer {
+  width: 100vw;
+  min-height: 300px;
+  height: fit-content;
+
+  padding: 3px 0;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Colour */
+  background: linear-gradient(90deg, #e5effa, #d7e0f7, #e5effa);
+  border-top: 1.5px solid rgba(0, 0, 0, 0.1);
 }
