@@ -12,6 +12,10 @@ h3,
 h4 {
   margin: 0;
 }
+body {
+  background-image: url(./assets/desktop/windows-11-wallpaper.jpg);
+  background-size: cover;
+}
 h3 {
   font-size: 1rem;
 }
@@ -131,7 +135,11 @@ button:active.taskbar-button img {
   min-width: fit-content;
   min-height: fit-content;
 }
+#search-box:hover {
+  opacity: 0.7;
+}
 #search-box input {
+  outline: none;
   font-size: 1.1rem;
   background-color: white;
   border: 1.5px solid rgba(0, 0, 0, 0.2);
