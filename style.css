@@ -66,7 +66,6 @@ footer {
 }
 #footer-centre {
   justify-content: center;
-  gap: 7px;
 }
 #footer-right {
   justify-content: flex-end;
@@ -133,6 +132,10 @@ button:active.taskbar-button img {
 
 /* Centre div in <footer> */
 
+#windows-button {
+  margin-right: 5px;
+}
+
 #search-box {
   display: flex;
   align-items: center;
@@ -149,7 +152,11 @@ button:active.taskbar-button img {
   background-color: white;
   border: 1.5px solid rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  padding: 6px 30px 6px 35px;
+  padding: 6px 20px 6px 36px;
+}
+#search-box input::placeholder {
+  color: black;
+  opacity: 0.65;
 }
 #search-box img {
   position: absolute;
@@ -159,6 +166,7 @@ button:active.taskbar-button img {
 #taskbar-icons {
   display: flex;
   flex-direction: row;
+  margin-left: 5px;
 }
 
 /* Right div in <footer> */
