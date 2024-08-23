@@ -41,8 +41,8 @@ footer {
 
   padding: 4px 0;
   margin-top: auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
 
   /* Colour */
@@ -62,9 +62,11 @@ footer {
   margin-left: 11px;
 }
 #footer-centre {
+  justify-content: center;
   gap: 7px;
 }
 #footer-right {
+  justify-content: flex-end;
   margin-right: 14px;
 }
 
