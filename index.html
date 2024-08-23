@@ -7,77 +7,63 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="overall">
-      <nav class="desktop-icon-wrapper">
-        <button>
-          <img src="./assets/desktop/this-pc.png" alt="The This PC icon on Windows 11">
-          <h4>This PC</h4>
-        </button>
-        <button>
-          <img src="./assets/desktop/this-pc.png" alt="The This PC icon on Windows 11">
-          <h4>This PC</h4>
-        </button>
-        <button>
-          <img src="./assets/desktop/this-pc.png" alt="The This PC icon on Windows 11">
-          <h4>This PC</h4>
-        </button>
-        <button>
-          <img src="./assets/desktop/this-pc.png" alt="The This PC icon on Windows 11">
-          <h4>This PC</h4>
-        </button>
-        <button>
-          <img src="./assets/desktop/this-pc.png" alt="The This PC icon on Windows 11">
-          <h4>This PC</h4>
-        </button>
-      </nav>
-      <footer class="taskbar-wrapper">
-        <div class="left">
-          <button class="weather clickable">
+    <main id="overall-div">
+      <footer>
+        <div id="footer-left">
+          <button id="weather-button">
             <img
               src="./assets/weather-sunny.png"
               alt="The Sunny icon in the Windows 11 taskbar weather"
               width="22"
             />
-            <div class="weather-text">
+            <div id="weather-button-text">
               <h3>18&deg;C</h3>
               <h4>Sunny</h4>
             </div>
           </button>
         </div>
-        <div class="centre">
-          <div id="windows-and-search">
-            <button class="windows-logo bouncy-click">
+        <div id="footer-centre">
+          <div>
+            <button id="windows-button" class="taskbar-button">
               <img
                 src="./assets/Windows_11_Start_Button.svg"
                 alt="The Windows 11 windows taskbar icon"
+                width="24"
               />
             </button>
-            <div id="search-box">
-              <img
-                src="./assets/Search-Icon.png"
-                alt="The Windows 11 search icon in the search box"
-                width="15"
-              />
-              <input type="text" placeholder="Search" id="search-input" />
-            </div>
+          </div>
+          <div id="search-box">
+            <img
+              src="./assets/Search-Icon.png"
+              alt="The Windows 11 search icon in the search box"
+              width="15"
+            />
+            <input
+              type="text"
+              placeholder="Search"
+              id="search-input"
+              spellcheck="false"
+            />
           </div>
           <div id="taskbar-icons">
-            <button class="taskbar-icon bouncy-click">
+            <button class="taskbar-button">
               <img
                 src="./assets/Windows_11_Task_View_Icon.png"
                 alt="The Windows 11 Task View icon"
+                width="31"
               />
             </button>
-            <button class="taskbar-icon bouncy-click">
+            <button class="taskbar-button">
               <img
                 src="./assets/File_Explorer_Icon.png"
                 alt="The Windows 11 File Explorer icon"
+                width="32"
               />
             </button>
           </div>
         </div>
-        <div class="right">
-          <button>
+        <div id="footer-right">
+          <button id="taskbar-tray-icon">
             <img
               src="./assets/taskbar-tray-icon.png"
               alt="The tray icon to show more taskbar icons on Windows 11"
@@ -102,8 +88,8 @@
             />
           </button>
           <button>
-            <div id="time-and-notifications">
-              <div class="time-text">
+            <div id="time-and-notifications-div">
+              <div id="time-and-notifications-text">
                 <h3>12:09</h3>
                 <h3>14/08/2024</h3>
               </div>
