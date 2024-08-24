@@ -224,6 +224,8 @@ button:active.taskbar-button img {
     align-items: center;
   }
 }
+
+/* I don't know how to shrink the elements in it yet */
 @media only screen and (orientation: landscape) and (max-width: 880px) {
   footer {
     grid-template-columns: repeat(3, minmax(0, 1fr));
