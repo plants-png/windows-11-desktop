@@ -4,6 +4,20 @@
   font-family: "Segoe UI", sans-serif;
   font-weight: normal;
 }
+
+#portrait-mode {
+  display: none; /* This is hidden by default */
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: black;
+  color: white;
+}
+#portrait-mode h1 {
+  font-weight: bold;
+}
+
 html {
   font-size: 12.8px;
 }
@@ -13,6 +27,8 @@ h4 {
   margin: 0;
 }
 body {
+  /* Background */
+
   background-image: url(./assets/desktop/windows-11-wallpaper-transparent.png),
     radial-gradient(circle at 50% 85%, white, #83acc8);
   background-repeat: no-repeat;
@@ -25,16 +41,16 @@ h3 {
 h4 {
   font-size: 0.9rem;
 }
-#overall-div {
+#main-div {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-#overall-div * {
+#main-div * {
   user-select: none;
 }
-#overall-div img {
+#main-div img {
   pointer-events: none;
 }
 footer {
@@ -188,4 +204,23 @@ button:active.taskbar-button img {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+/* Ensures that website can't be in portrait mode on mobile devices */
+
+@media only screen and (orientation: portrait) {
+  body {
+    background-image: none;
+  }
+  #main-div {
+    display: none;
+  }
+  #portrait-mode {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+  }
 }

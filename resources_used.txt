@@ -1,0 +1,3 @@
+Google - Images
+Snipping Tool - Windows 11 taskbar images
+https://huggingface.co/spaces/ECCV2022/dis-background-removal - Removing the background of the Windows 11 wallpaper
