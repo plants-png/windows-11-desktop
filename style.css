@@ -224,3 +224,8 @@ button:active.taskbar-button img {
     align-items: center;
   }
 }
+@media only screen and (orientation: landscape) and (max-width: 880px) {
+  footer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
