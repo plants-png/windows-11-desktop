@@ -1,7 +1,7 @@
 /* Metadata configuration */
 
 * {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', 'Open Sans', sans-serif;
   font-weight: normal;
 }
 
@@ -37,9 +37,11 @@ body {
 }
 h3 {
   font-size: 1rem;
+  color: black;
 }
 h4 {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: black;
 }
 #main-div {
   width: 100vw;
