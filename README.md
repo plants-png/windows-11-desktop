@@ -9,3 +9,5 @@ Plans for this project include:
 - Adding the desktop icons, such as the Recycling Bin
 - Making the website mobile friendly (but only in landscape orientation on phones)
 - (once I've learnt JavaScript) Adding animations whenever you click the Start menu or Search bar, and to make the time and weather widgets adjust in real time.
+
+The site is (https://plants-png.github.io/windows-11-desktop/)
