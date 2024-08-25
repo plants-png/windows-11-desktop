@@ -234,10 +234,6 @@ button:active.taskbar-button img {
     display: flex;
     justify-content: space-between;
   }
-  #footer-left,
-  #footer-right {
-    margin: 0;
-  }
   #weather-button {
     padding-right: 10px;
   }
@@ -247,6 +243,10 @@ button:active.taskbar-button img {
   }
 }
 @media only screen and (orientation: landscape) and (max-width: 735px) {
+  #footer-left,
+  #footer-right {
+    margin: 0;
+  }
   #taskbar-tray-icon,
   #windows-update-icon {
     display: none;
