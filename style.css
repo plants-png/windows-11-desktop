@@ -1,7 +1,7 @@
 /* Metadata configuration */
 
 * {
-  font-family: 'Segoe UI', 'Open Sans', sans-serif;
+  font-family: "Segoe UI", "Open Sans", sans-serif;
   font-weight: normal;
 }
 
@@ -230,6 +230,25 @@ button:active.taskbar-button img {
 /* I don't know how to shrink the elements in it yet */
 @media only screen and (orientation: landscape) and (max-width: 880px) {
   footer {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+    display: flex;
+    justify-content: space-between;
+  }
+  #footer-left,
+  #footer-right {
+    margin: 0;
+  }
+  #weather-button {
+    padding-right: 10px;
+  }
+  #search-box input {
+    padding-right: 0;
+    width: 80px;
+  }
+}
+@media only screen and (orientation: landscape) and (max-width: 735px) {
+  #taskbar-tray-icon,
+  #windows-update-icon {
+    display: none;
   }
 }
