@@ -135,7 +135,7 @@ button:active.taskbar-button img {
 
 #weather-button {
   padding-left: 10px;
-  padding-right: 75px;
+  padding-right: 70px;
   display: flex;
   gap: 7px;
 }
