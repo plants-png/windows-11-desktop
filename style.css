@@ -161,7 +161,7 @@ button:active.taskbar-button img {
   min-width: fit-content;
   min-height: fit-content;
 }
-#search-box:hover {
+#search-box:hover, #search-box:focus-within {
   opacity: 0.7;
 }
 #search-box input {
