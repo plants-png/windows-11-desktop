@@ -4,20 +4,20 @@
   font-family: "Segoe UI", "Open Sans", sans-serif;
   font-weight: normal;
 }
+:root {
+  --default-text: black;
+  --widget-subtext: grey;
 
-#portrait-mode {
-  display: none; /* This is hidden by default */
+  --taskbar-border: 1.5px solid rgba(0, 0, 0, 0.1);
+  --taskbar-button-border-hover: rgba(0, 0, 0, 0.05);
+  --taskbar-button-hover: rgba(255, 255, 255, 0.6);
+  --taskbar-button-clicked: rgba(255, 255, 255, 0.3);
 
-  width: 100vw;
-  height: 100vh;
-
-  background-color: black;
-  color: white;
+  --searchbox-hover-opacity: 0.7;
+  --searchbox: rgba(255, 255, 255, 0.85);
+  --searchbox-border: 1.5px solid rgba(0, 0, 0, 0.17);
+  --searchbox-placeholder-opacity: 0.65;
 }
-#portrait-mode h1 {
-  font-weight: bold;
-}
-
 html {
   font-size: 12.8px;
 }
@@ -37,11 +37,11 @@ body {
 }
 h3 {
   font-size: 1rem;
-  color: black;
+  color: var(--default-text);
 }
 h4 {
   font-size: 0.95rem;
-  color: black;
+  color: var(--default-text);
 }
 #main-div {
   width: 100vw;
@@ -68,7 +68,7 @@ footer {
 
   /* Colour */
   background: linear-gradient(90deg, #e5effa, #d7e0f7, #e5effa);
-  border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+  border-top: var(--taskbar-border);
 }
 
 #footer-left,
@@ -103,11 +103,11 @@ footer button {
   align-self: stretch;
 }
 footer button:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-color: rgba(0, 0, 0, 0.05);
+  background-color: var(--taskbar-button-hover);
+  border-color: var(--taskbar-button-border-hover);
 }
 footer button:active {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--taskbar-button-clicked);
 }
 
 /* Taskbar buttons */
@@ -145,7 +145,7 @@ button:active.taskbar-button img {
   align-items: flex-start;
 }
 #weather-button-text h4 {
-  color: grey;
+  color: var(--widget-subtext);
 }
 
 /* Centre div in <footer> */
@@ -162,7 +162,7 @@ button:active.taskbar-button img {
   min-height: fit-content;
 }
 #search-box:hover, #search-box:focus-within {
-  opacity: 0.7;
+  opacity: var(--searchbox-hover-opacity);
 }
 #search-box-icon {
   transform: rotate(5deg);
@@ -170,14 +170,14 @@ button:active.taskbar-button img {
 #search-box input {
   outline: none;
   font-size: 1.11rem;
-  background-color: rgba(255, 255, 255, 0.85);
-  border: 1.5px solid rgba(0, 0, 0, 0.17);
+  background-color: var(--searchbox);
+  border: var(--searchbox-border);
   border-radius: 20px;
   padding: 6px 20px 6px 36px;
 }
 #search-box input::placeholder {
-  color: black;
-  opacity: 0.65;
+  color: var(--default-text);
+  opacity: var(--searchbox-placeholder-opacity);
 }
 #search-box img {
   position: absolute;
@@ -212,6 +212,20 @@ button:active.taskbar-button img {
 }
 
 /* Ensures that website can't be in portrait mode on mobile devices */
+
+#portrait-mode {
+  display: none; /* This is hidden by default */
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: black;
+  color: white;
+}
+#portrait-mode h1 {
+  font-weight: bold;
+}
+
 
 @media only screen and (orientation: portrait) {
   body {
