@@ -13,9 +13,16 @@
   --taskbar-button-hover: rgba(255, 255, 255, 0.6);
   --taskbar-button-clicked: rgba(255, 255, 255, 0.3);
 
-  --searchbox-hover-opacity: 0.7;
   --searchbox: rgba(255, 255, 255, 0.85);
-  --searchbox-border: 1.5px solid rgba(0, 0, 0, 0.17);
+  --searchbox-border-colour1: rgba(0, 0, 0, 0.05);
+  --searchbox-border-colour2: rgba(0, 0, 0, 0.15);
+  --searchbox-border-gradient: linear-gradient(
+        var(--searchbox),
+        var(--searchbox)
+      )
+      padding-box,
+    linear-gradient(180deg, var(--searchbox-border-colour1) 75%, var(--searchbox-border-colour2) 100%) border-box;
+  --searchbox-border: 1.5px solid transparent;
   --searchbox-placeholder-opacity: 0.65;
 }
 html {
@@ -161,8 +168,10 @@ button:active.taskbar-button img {
   min-width: fit-content;
   min-height: fit-content;
 }
-#search-box:hover, #search-box:focus-within {
-  opacity: var(--searchbox-hover-opacity);
+#search-box:hover,
+#search-box:focus-within {
+  filter: brightness(97%);
+  opacity: 0.9;
 }
 #search-box-icon {
   transform: rotate(5deg);
@@ -170,7 +179,7 @@ button:active.taskbar-button img {
 #search-box input {
   outline: none;
   font-size: 1.11rem;
-  background-color: var(--searchbox);
+  background: var(--searchbox-border-gradient);
   border: var(--searchbox-border);
   border-radius: 20px;
   padding: 6px 20px 6px 36px;
@@ -225,7 +234,6 @@ button:active.taskbar-button img {
 #portrait-mode h1 {
   font-weight: bold;
 }
-
 
 @media only screen and (orientation: portrait) {
   body {
