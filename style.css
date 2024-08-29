@@ -26,7 +26,7 @@
   --searchbox-placeholder-opacity: 0.65;
 }
 html {
-  font-size: 12.8px;
+  font-size: 0.8rem;
 }
 body,
 h3,
@@ -43,11 +43,11 @@ body {
   background-size: contain;
 }
 h3 {
-  font-size: 1rem;
+  font-size: clamp(0.5em, 1em, 1.5em);
   color: var(--default-text);
 }
 h4 {
-  font-size: 0.95rem;
+  font-size: clamp(0.3em, 0.95em, 1em);
   color: var(--default-text);
 }
 #main-div {
