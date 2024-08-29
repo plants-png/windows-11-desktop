@@ -131,6 +131,7 @@ button.taskbar-button {
 }
 
 button.taskbar-button img {
+  width: clamp(20px, 24px, 36px);
   transition: all 0.15s ease;
 }
 
@@ -254,17 +255,20 @@ button:active.taskbar-button img {
 
 /* I don't know how to shrink the elements in it yet */
 @media only screen and (orientation: landscape) and (max-width: 880px) {
+  * {
+    font-size: 0.98em;
+  }
   footer {
     /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
     display: flex;
     justify-content: space-between;
   }
   #weather-button {
-    padding-right: 10px;
+    padding-right: 15px;
   }
   #search-box input {
     padding-right: 0;
-    width: 80px;
+    width: 100px;
   }
 }
 @media only screen and (orientation: landscape) and (max-width: 735px) {
