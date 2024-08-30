@@ -47,7 +47,7 @@ h3 {
   color: var(--default-text);
 }
 h4 {
-  font-size: clamp(0.3em, 0.95em, 1em);
+  font-size: clamp(0.3em, 0.9em, 1.1em);
   color: var(--default-text);
 }
 #main-div {
@@ -131,7 +131,7 @@ button.taskbar-button {
 }
 
 button.taskbar-button img {
-  width: clamp(20px, 24px, 36px);
+  width: 24px;
   transition: all 0.15s ease;
 }
 
@@ -256,19 +256,48 @@ button:active.taskbar-button img {
 /* I don't know how to shrink the elements in it yet */
 @media only screen and (orientation: landscape) and (max-width: 880px) {
   * {
-    font-size: 0.98em;
+    font-size: 1.6vw;
   }
   footer {
     /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
     display: flex;
     justify-content: space-between;
   }
+  /* #footer-left */
   #weather-button {
     padding-right: 15px;
   }
+
+  /* #footer-centre */
   #search-box input {
     padding-right: 0;
-    width: 100px;
+    width: 10vw;
+  }
+  button.taskbar-button {
+    padding: 2.5vw;
+  }
+  button.taskbar-button img {
+    width: 3vw;
+  }
+  
+  /* In #footer-right */
+  button {
+    padding: 0 2px;
+  }
+  #taskbar-tray-icon img {
+    width: 1.5vw;
+  }
+  #windows-update-icon img {
+    width: 2vw;
+  }
+  #taskbar-control-panel img {
+    width: 8vw;
+  }
+  #time-and-notifications-div img {
+    width: 1.6vw;
+  }
+  #taskbar-copilot-icon img {
+    width: 3vw;
   }
 }
 @media only screen and (orientation: landscape) and (max-width: 735px) {
@@ -276,8 +305,8 @@ button:active.taskbar-button img {
   #footer-right {
     margin: 0;
   }
-  #taskbar-tray-icon,
+  /* #taskbar-tray-icon,
   #windows-update-icon {
     display: none;
-  }
+  } */
 }
