@@ -21,7 +21,12 @@
         var(--searchbox)
       )
       padding-box,
-    linear-gradient(180deg, var(--searchbox-border-colour1) 75%, var(--searchbox-border-colour2) 100%) border-box;
+    linear-gradient(
+        180deg,
+        var(--searchbox-border-colour1) 75%,
+        var(--searchbox-border-colour2) 100%
+      )
+      border-box;
   --searchbox-border: 1.5px solid transparent;
   --searchbox-placeholder-opacity: 0.65;
 }
@@ -132,7 +137,7 @@ button.taskbar-button {
 
 button.taskbar-button img {
   width: 24px;
-  transition: all 0.15s ease;
+  transition: transform 0.15s ease;
 }
 
 button:active.taskbar-button img {
@@ -253,8 +258,7 @@ button:active.taskbar-button img {
   }
 }
 
-/* I don't know how to shrink the elements in it yet */
-@media only screen and (orientation: landscape) and (max-width: 880px) {
+@media only screen and (orientation: landscape) and (max-width: 860px) {
   * {
     font-size: 1.6vw;
   }
@@ -263,15 +267,29 @@ button:active.taskbar-button img {
     display: flex;
     justify-content: space-between;
   }
+  #footer-left,
+  #footer-right {
+    margin: 0;
+  }
   /* #footer-left */
   #weather-button {
     padding-right: 15px;
   }
+  #weather-button img {
+    width: 3vw;
+  }
 
   /* #footer-centre */
   #search-box input {
-    padding-right: 0;
+    padding-left: 4vw;
+    padding-right: 3vw;
     width: 10vw;
+    height: 2vmax;
+    font-size: 1.8vw;
+  }
+  #search-box img {
+    left: 1.5vw;
+    width: 1.75vw;
   }
   button.taskbar-button {
     padding: 2.5vw;
@@ -279,10 +297,10 @@ button:active.taskbar-button img {
   button.taskbar-button img {
     width: 3vw;
   }
-  
+
   /* In #footer-right */
   button {
-    padding: 0 2px;
+    padding: 0 3px;
   }
   #taskbar-tray-icon img {
     width: 1.5vw;
@@ -299,14 +317,4 @@ button:active.taskbar-button img {
   #taskbar-copilot-icon img {
     width: 3vw;
   }
-}
-@media only screen and (orientation: landscape) and (max-width: 735px) {
-  #footer-left,
-  #footer-right {
-    margin: 0;
-  }
-  /* #taskbar-tray-icon,
-  #windows-update-icon {
-    display: none;
-  } */
 }
