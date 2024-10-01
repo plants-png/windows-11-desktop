@@ -8,6 +8,9 @@
   --default-text: black;
   --widget-subtext: grey;
 
+  --h3-font-size: 0.95rem;
+  --h4-font-size: 0.9rem;
+
   --taskbar-border: 1.5px solid rgba(0, 0, 0, 0.1);
   --taskbar-button-border-hover: rgba(0, 0, 0, 0.05);
   --taskbar-button-hover: rgba(255, 255, 255, 0.6);
@@ -31,7 +34,7 @@
   --searchbox-placeholder-opacity: 0.65;
 }
 html {
-  font-size: 0.8rem;
+  font-size: 13px;
 }
 body,
 h3,
@@ -48,11 +51,11 @@ body {
   background-size: contain;
 }
 h3 {
-  font-size: clamp(0.5em, 1em, 1.5em);
+  font-size: var(--h3-font-size);
   color: var(--default-text);
 }
 h4 {
-  font-size: clamp(0.3em, 0.9em, 1.1em);
+  font-size: var(--h4-font-size);
   color: var(--default-text);
 }
 #main-div {
@@ -221,6 +224,7 @@ button:active.taskbar-button img {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  /* font-size: 0.95em; */
 }
 
 /* Ensures that website can't be in portrait mode on mobile devices */
@@ -288,7 +292,7 @@ button:active.taskbar-button img {
   #search-box input {
     padding-left: 4vw;
     padding-right: 3vw;
-    width: 10vw;
+    width: 11vw;
     height: 2vw;
     /* height: 100%; */
     font-size: 1.8vw;
