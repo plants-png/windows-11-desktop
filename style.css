@@ -1,5 +1,4 @@
-/* Metadata configuration */
-
+/* METADATA */
 * {
   font-family: "Segoe UI", "Open Sans", sans-serif;
   font-weight: normal;
@@ -34,7 +33,7 @@
   --searchbox-placeholder-opacity: 0.65;
 }
 html {
-  font-size: 13px;
+  font-size: 13px; /* default font size */
 }
 body,
 h3,
@@ -42,8 +41,6 @@ h4 {
   margin: 0;
 }
 body {
-  /* Background */
-
   background-image: url(./assets/desktop/windows-11-wallpaper-transparent.png),
     radial-gradient(circle at 50% 85%, white, #83acc8);
   background-repeat: no-repeat;
@@ -70,7 +67,6 @@ main * {
 main img {
   pointer-events: none;
 }
-
 
 /* TASKBAR CONFIGURATION */
 #taskbar {
@@ -217,10 +213,9 @@ button:active.taskbar-button img {
   align-items: flex-end;
 }
 
-
 /* IF USER HAS A MOBILE DEVICE IN PORTRAIT MODE */
 #portrait-mode {
-  display: none; /* This is hidden by default */
+  display: none; /* Hidden by default */
 
   width: 100vw;
   height: 100vh;
@@ -246,85 +241,5 @@ button:active.taskbar-button img {
 
     justify-content: center;
     align-items: center;
-  }
-}
-
-@media only screen and (orientation: landscape) and (max-width: 885px) {
-  * {
-    font-size: 1.6vw;
-  }
-  #taskbar {
-    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
-    display: flex;
-    justify-content: space-between;
-    padding: 0.25vw 0;
-  }
-  #taskbar-left,
-  #taskbar-right {
-    margin: 0;
-  }
-  /* #taskbar-left */
-  #weather-button {
-    padding-right: 3vw;
-    gap: 1vw;
-  }
-  #weather-button img {
-    width: 3vw;
-  }
-
-  /* #taskbar-centre */
-  #windows-button {
-    margin: 0;
-  }
-  #search-box {
-    height: 100%;
-  }
-  #search-box input {
-    padding-left: 4vw;
-    padding-right: 3vw;
-    width: 11vw;
-    height: 2vw;
-    /* height: 100%; */
-    font-size: 1.8vw;
-  }
-  #search-box img {
-    left: 1.5vw;
-    width: 1.75vw;
-  }
-  button.taskbar-button {
-    width: 2vw;
-    padding: 2.5vw;
-  }
-  button.taskbar-button img {
-    width: 3vw;
-  }
-  #taskbar-icons {
-    margin: 0;
-  }
-
-  /* #taskbar-right */
-  button {
-    padding: 0 3px;
-  }
-  #taskbar-tray-icon {
-    padding: 0 0.8vw;
-  }
-  #taskbar-tray-icon img {
-    width: 1.25vw;
-  }
-  #windows-update-icon img {
-    width: 2vw;
-  }
-  #taskbar-language {
-    padding: 0 1vw;
-  }
-  #taskbar-control-panel img {
-    width: 8vw;
-  }
-  #time-and-notifications-div img {
-    width: 1.6vw;
-  }
-  #taskbar-copilot-icon img {
-    width: 3vw;
   }
 }
